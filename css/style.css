@@ -289,6 +289,47 @@ h1 {
     padding-bottom: 10px;
 }
 
+/* GRADIENTES */
+
+/* TRANSFORMACIONES */
+
+.fotosSection :hover {
+    transform: scale(2);
+}
+
+/* ANIMACIONES */
+
+.imagenHistoria{animation:kenburns-bottom 5s ease-out both}
+
+ @keyframes kenburns-bottom{0%{transform:scale(1) translateY(0);transform-origin:50% 84%}100%{transform:scale(1.25) translateY(15px);transform-origin:bottom}}
+
+ .imagenDiv1{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+animation-delay: 0.1s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.imagenDiv2{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 0.2s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.imagenDiv3{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 0.3s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.imagenDiv4{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 0.4s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.imagenDiv5{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 0.5s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.imagenDiv6{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+    animation-delay: 0.6s;}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+.contactoSection{animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both}
+ @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+
 /* medias queries */
 /* TABLET */
 /* todas las secciones*/
@@ -374,3 +415,4 @@ h1 {
         padding-inline: 20px;
     }
 }
+
