@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* menu */
+header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+}
+
+.logoDragons {
+    width: 150px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.menuItem {
+    margin: 20px;
+}
+
+.menuItem a {
+    color: #002642;
+    text-decoration: none;
+}
+
+.menuItem.active {
+    text-decoration: underline;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.pieDePagina {
+    background-color: #002642;
+    color: #E59500;
+    padding-block: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.pieDiv a i {
+    color: #E59500;
+}
+
+.pieDiv a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+/*titulosPrincipales*/
+h1 {
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #840032;
+    border: double;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* index */
+.mansionFoto {
+    border-radius: 10px;
+}
+
+.portadaMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* historia del club */
+.historiaMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenHistoria {
+    height: 80vh;
+    background-image: url(../img/foto-jugadores\ copia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 150px;
+}
+
+.imagenHistoria h2 {
+    background-color: #840032;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.imagenHistoria p {
+    color: #840032;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(169, 169, 169, 0.841);
+    line-height: 2;
+}
+
+.seccionesHistoria {
+    background-color: #002642;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.divHistoria h3 {
+    color: white;
+    margin-block: 25px;
+    text-align: center;
+    border-style: double;
+    background-color: #840032;
+}
+
+.divHistoria ul li {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.remera {
+    width: 200px;
+    margin-left: 100px;
+}
+
+/* equipos */
+.equiposMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Galeria de fotos */
+/* utilizar GRID para ordenar las imagenes */
+.galeriaMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotosSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+    margin-left: 100px;
+}
+
+.fotosSection img {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+/* sponsors */
+/* GRID */
+.sponsorsMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorsDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.imagenDiv1 {
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.imagenDiv2 {
+    background-color: white;
+    padding-left: 45px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.imagenDiv3 {
+    background-color: white;
+    padding-left: 60px;
+    border-radius: 10px;
+}
+
+.imagenDiv4 {
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.imagenDiv5 {
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.imagenDiv6 {
+    background-color: white;
+    padding-top: 25px;
+    border-radius: 10px;
+}
+
+/* contacto */
+.contactoMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.icono i {
+    padding-bottom: 10px;
+}
+
+/* medias queries */
+/* TABLET */
+/* todas las secciones*/
+@media screen and (max-width:768px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .logoDragons {
+        width: 100px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 5px;
+    }
+
+    .seccionesHistoria {
+        flex-direction: column;
+    }
+
+    .imagenHistoria p {
+        line-height: 1.6;
+        overflow: scroll;
+    }
+
+    .fotosSection {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(9, 2fr);
+        margin-left: 0%;
+    }
+}
+
+/* MOBILE */
+/* todas las secciones */
+@media screen and (max-width:480px) {
+
+    header {
+        background-color: #002642;
+    }
+
+    .menuItem a {
+        color: white;
+    }
+
+    .imagenHistoria {
+        padding-inline: 20px;
+    }
+
+    .imagenHistoria h2 {
+        margin-top: 5px;
+    }
+
+    .seccionesHistoria {
+        gap: 0;
+        width: 100%;
+    }
+
+    .divHistoria iframe {
+        width: 100%;
+    }
+
+    .fotosSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsorsDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icono {
+        padding-inline: 20px;
+    }
+}
