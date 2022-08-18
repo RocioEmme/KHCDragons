@@ -525,17 +525,22 @@ h1 {
         color: white;
     }
 
-    .portadaMain {
+    .portadaMain{
         text-align: center;
     }
 
-    .mansionFoto {
-        width: 100vh
+    .mansionFoto{
+        width: 100vh;
     }
 
     .imagenHistoria {
         height: 100vh;
         animation: none;
+        padding-inline: 0;
+    }
+
+    .imagenHistoria p{
+        line-height: 1.6;
     }
 
     .seccionesHistoria {
@@ -555,6 +560,7 @@ h1 {
     .fotosSection {
         display: flex;
         flex-direction: column;
+        margin-left: 0%;
     }
 
     .sponsorsDiv {
