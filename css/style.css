@@ -158,9 +158,15 @@ h1 {
     line-height: 50px;
 }
 
+.ambasRemeras {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
 .remera {
     width: 200px;
-    margin-left: 100px;
 }
 
 /* equipos */
@@ -299,41 +305,133 @@ h1 {
 
 /* ANIMACIONES */
 
-.imagenHistoria{animation:kenburns-bottom 5s ease-out both}
+.imagenHistoria {
+    animation: kenburns-bottom 5s ease-out both
+}
 
- @keyframes kenburns-bottom{0%{transform:scale(1) translateY(0);transform-origin:50% 84%}100%{transform:scale(1.25) translateY(15px);transform-origin:bottom}}
+@keyframes kenburns-bottom {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 84%
+    }
 
- .imagenDiv1{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-animation-delay: 0.1s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+    100% {
+        transform: scale(1.25) translateY(15px);
+        transform-origin: bottom
+    }
+}
 
-.imagenDiv2{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-    animation-delay: 0.2s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+.imagenDiv1 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.1s;
+}
 
-.imagenDiv3{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-    animation-delay: 0.3s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
 
-.imagenDiv4{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-    animation-delay: 0.4s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+    100% {
+        transform: scale(1)
+    }
+}
 
-.imagenDiv5{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-    animation-delay: 0.5s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+.imagenDiv2 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.2s;
+}
 
-.imagenDiv6{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both;
-    animation-delay: 0.6s;}
-@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
 
-.contactoSection{animation:slide-in-left .5s cubic-bezier(.25,.46,.45,.94) both}
- @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv3 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.3s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv4 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.4s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv5 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.5s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv6 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.6s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.contactoSection {
+    animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
 
 /* medias queries */
 /* TABLET */
 /* todas las secciones*/
-@media screen and (max-width:768px) {
+
+@media (min-width:768px) and (max-width:1024px) {
 
     header {
         flex-direction: column;
@@ -356,13 +454,37 @@ animation-delay: 0.1s;}
         margin: 5px;
     }
 
+    .portadaMain {
+        text-align: center;
+    }
+
+    .mansionFoto {
+        width: 100vh
+    }
+
     .seccionesHistoria {
         flex-direction: column;
     }
 
-    .imagenHistoria p {
-        line-height: 1.6;
-        overflow: scroll;
+    .imagenHistoria {
+        height: 100vh;
+    }
+
+    .ambasRemeras {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .mapa h3{
+        width: 100%;
     }
 
     .fotosSection {
@@ -374,27 +496,56 @@ animation-delay: 0.1s;}
 
 /* MOBILE */
 /* todas las secciones */
-@media screen and (max-width:480px) {
+
+@media (min-width:320px)and (max-width:768px) {
 
     header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
         background-color: #002642;
+    }
+
+    .logoDragons {
+        width: 100px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 5px;
     }
 
     .menuItem a {
         color: white;
     }
 
-    .imagenHistoria {
-        padding-inline: 20px;
+    .portadaMain {
+        text-align: center;
     }
 
-    .imagenHistoria h2 {
-        margin-top: 5px;
+    .mansionFoto {
+        width: 100vh
+    }
+
+    .imagenHistoria {
+        height: 100vh;
+        animation: none;
     }
 
     .seccionesHistoria {
-        gap: 0;
-        width: 100%;
+        flex-direction: column;
+    }
+
+    .ambasRemeras {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .divHistoria iframe {
@@ -409,10 +560,10 @@ animation-delay: 0.1s;}
     .sponsorsDiv {
         display: flex;
         flex-direction: column;
+        padding-left: 0;
     }
 
     .icono {
         padding-inline: 20px;
     }
 }
-
