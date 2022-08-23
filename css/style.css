@@ -21,12 +21,12 @@ header {
     width: 150px;
 }
 
-.container-fluid{
+.container-fluid {
     display: flex;
     align-items: center;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
     list-style-type: none;
     gap: 10px;
@@ -37,7 +37,7 @@ header {
     margin: 15px;
 }
 
-.nav-item a{
+.nav-item a {
     color: #002642;
     text-decoration: none;
 }
@@ -48,6 +48,10 @@ header {
 
 .navbar-nav a:hover {
     text-decoration: underline;
+}
+
+.navbar-toggler-icon {
+    color: white;
 }
 
 /* footer */
@@ -179,7 +183,6 @@ h1 {
 }
 
 /* Galeria de fotos */
-/* utilizar GRID para ordenar las imagenes */
 .galeriaMain {
     background-color: #002642;
     padding-top: 30px;
@@ -187,21 +190,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.fotosSection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    row-gap: 5px;
-    column-gap: 10px;
-    margin-left: 100px;
-}
-
-.fotosSection img {
-    max-width: 300px;
-    max-height: 200px;
-    border-radius: 5px;
 }
 
 /* sponsors */
@@ -292,14 +280,6 @@ h1 {
 
 .icono i {
     padding-bottom: 10px;
-}
-
-/* GRADIENTES */
-
-/* TRANSFORMACIONES */
-
-.fotosSection :hover {
-    transform: scale(2);
 }
 
 /* ANIMACIONES */
@@ -432,25 +412,18 @@ h1 {
 
 @media (min-width:768px) and (max-width:1024px) {
 
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
     .logoDragons {
         width: 100px;
+        height: 100px;
     }
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    .navbar-nav {
+        align-items: flex-end;
+        font-size: 20px;
     }
 
-    .menuItem {
-        margin: 5px;
+    .nav-item {
+        margin: 0%;
     }
 
     .portadaMain {
@@ -475,14 +448,14 @@ h1 {
         align-items: center;
     }
 
-    .mapa{
+    .mapa {
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
     }
 
-    .mapa h3{
+    .mapa h3 {
         width: 100%;
     }
 
@@ -498,37 +471,34 @@ h1 {
 
 @media (min-width:320px)and (max-width:768px) {
 
-    header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background-color: #002642;
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: flex-end;
+    }
+    .navbar-nav {
+        font-size: 15px;
+        align-items: flex-end;
     }
 
     .logoDragons {
         width: 100px;
+        height: 100px;
     }
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+    .nav-item {
+        margin: 0%;
     }
 
-    .menuItem {
-        margin: 5px;
-    }
-
-    .menuItem a {
-        color: white;
-    }
-
-    .portadaMain{
+    .portadaMain {
         text-align: center;
     }
 
-    .mansionFoto{
+    .mansionFoto {
         width: 100vw;
     }
 
@@ -537,7 +507,7 @@ h1 {
         padding-inline: 0;
     }
 
-    .imagenHistoria p{
+    .imagenHistoria p {
         line-height: 1.6;
     }
 
@@ -568,25 +538,26 @@ h1 {
         width: 100vw;
     }
 
-    .sponsor{
+    .sponsor {
         width: 90vw;
     }
 
-    .imagenDiv2{
+    .imagenDiv2 {
         padding-left: 15px;
     }
 
-    .imagenDiv3{
+    .imagenDiv3 {
         padding-left: 20px;
     }
 
-    .imagenDiv4{
+    .imagenDiv4 {
         padding-left: 5px;
     }
 
-    .imagenDiv6{
+    .imagenDiv6 {
         padding-left: 10px;
     }
+
     .icono {
         padding-inline: 20px;
     }
