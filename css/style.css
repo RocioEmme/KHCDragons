@@ -21,32 +21,32 @@ header {
     width: 150px;
 }
 
-.navbar {
+.container-fluid{
     display: flex;
     align-items: center;
 }
 
-.menu {
+.navbar-nav{
     display: flex;
     list-style-type: none;
     gap: 10px;
     font-size: 24px;
 }
 
-.menuItem {
-    margin: 20px;
+.nav-item {
+    margin: 15px;
 }
 
-.menuItem a {
+.nav-item a{
     color: #002642;
     text-decoration: none;
 }
 
-.menuItem.active {
+.nav-link.active {
     text-decoration: underline;
 }
 
-.menu a:hover {
+.navbar-nav a:hover {
     text-decoration: underline;
 }
 

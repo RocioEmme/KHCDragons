@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KHC Dragons</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- ESTILO DE FUENTE -->
     <script src="https://kit.fontawesome.com/57dc7168d9.js" crossorigin="anonymous"></script>
 
     <!-- CSS -->
@@ -16,31 +21,41 @@
     <header>
 
         <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
-
-        <nav class="navbar">
-
-            <ul class="menu">
-                <li class="menuItem">
-                    <a href="./index.html">INICIO</a>
-                </li>
-                <li class="menuItem">
-                    <a href="./historia.html">HISTORIA</a>
-                </li>
-                <li class="menuItem">
-                    <a href="./equipos.html">EQUIPOS</a>
-                </li>
-                <li class="menuItem active">
-                    <a href="./galeria.html">GALERIA</a>
-                </li>
-                <li class="menuItem">
-                    <a href="./sponsors.html">SPONSORS</a>
-                </li>
-                <li class="menuItem">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./historia.html">HISTORIA</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./equipos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EQUIPOS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./dames.html">DAMES 1</a></li>
+                      <li><a class="dropdown-item" href="./heren.html">HEREN 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./galeria.html">GALERIA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sponsors.html">SPONSORS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
     </header>
 
     <main class="galeriaMain">
@@ -95,6 +110,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
