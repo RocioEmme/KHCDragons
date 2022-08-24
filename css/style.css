@@ -75,12 +75,11 @@ header {
 /*titulosPrincipales*/
 h1 {
     color: white;
-    padding: 30px;
+    padding: 10px;
     font-size: 30px;
     font-weight: bold;
     background-color: #840032;
     border: double;
-    margin-bottom: 30px;
     border-radius: 10px;
 }
 
@@ -90,13 +89,18 @@ h1 {
 }
 
 .portadaMain {
-    background-color: #002642;
+    background-image: url(../img/mansion-linda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 /* historia del club */
 .historiaMain {
@@ -118,13 +122,17 @@ h1 {
     justify-content: center;
     align-items: center;
     padding-inline: 150px;
+    height: 100vh;
+    width: 100%;
+
 }
 
 .imagenHistoria h2 {
     background-color: #840032;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-block: 20px;
+    padding-inline:10px;
     color: white;
 }
 
@@ -184,6 +192,14 @@ h1 {
 .card-body li {
     color: #002642;
     font-weight: bold;
+}
+
+.card img{ 
+    opacity: 0.7;
+}
+
+.card-img-top:hover{
+    opacity: 1;
 }
 
 /* Galeria de fotos */
@@ -292,6 +308,10 @@ h1 {
 }
 
 /* ANIMACIONES */
+
+h1 {animation:tracking-out-contract .7s cubic-bezier(.55,.085,.68,.53) 0.8s both}
+
+ @keyframes tracking-out-contract{0%{opacity:1}50%{opacity:1}100%{letter-spacing:-.5em;opacity:0}}
 
 .imagenHistoria {
     animation: kenburns-bottom 5s ease-out both
