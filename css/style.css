@@ -13,8 +13,6 @@ header {
     gap: 20px;
     justify-content: space-around;
     background-color: white;
-    position: sticky;
-    top: 0%;
 }
 
 .logoDragons {
@@ -135,7 +133,7 @@ h1 {
     text-align: center;
     font-weight: bold;
     background-color: rgba(169, 169, 169, 0.841);
-    line-height: 2;
+    line-height: 1.6;
 }
 
 .seccionesHistoria {
@@ -158,7 +156,8 @@ h1 {
     list-style-type: none;
     color: white;
     text-align: center;
-    line-height: 50px;
+    line-height: 1.8;
+    font-size: 20px;
 }
 
 .ambasRemeras {
@@ -180,6 +179,11 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card-body li {
+    color: #002642;
+    font-weight: bold;
 }
 
 /* Galeria de fotos */
@@ -458,12 +462,6 @@ h1 {
     .mapa h3 {
         width: 100%;
     }
-
-    .fotosSection {
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(9, 2fr);
-        margin-left: 0%;
-    }
 }
 
 /* MOBILE */
@@ -523,12 +521,6 @@ h1 {
 
     .divHistoria iframe {
         width: 100%;
-    }
-
-    .fotosSection {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0%;
     }
 
     .sponsorsDiv {

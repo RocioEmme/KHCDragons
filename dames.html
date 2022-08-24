@@ -2,93 +2,499 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHC Dragons</title>
-   
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHC Dragons</title>
 
-<!-- ESTILO DE FUENTE -->
-    <script src="https://kit.fontawesome.com/57dc7168d9.js" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- ESTILO DE FUENTE -->
+  <script src="https://kit.fontawesome.com/57dc7168d9.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
 
-        <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
+  <header class="sticky-top">
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./historia.html">HISTORIA</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="./equipos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EQUIPOS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./dames.html">DAMES 1</a></li>
-                      <li><a class="dropdown-item" href="./heren.html">HEREN 1</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./galeria.html">GALERIA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./sponsors.html">SPONSORS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
+    <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="./equipos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">EQUIPOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./dames.html">DAMES 1</a></li>
+                <li><a class="dropdown-item" href="./heren.html">HEREN 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sponsors.html">SPONSORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="equiposMain">
+
+    <section class="container d-flex flex-column justify-content-center align-items-center">
+
+      <h1>Dames 1</h1>
+
+      <!-- card con bootstrap-->
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Maite_v.jpeg" class="card-img-top" alt="Maite">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Maite Bussels
+                </li>
+                <li>
+                  Posición: Arquera
+                </li>
+                <li>
+                  Número de camiseta: 33
+                </li>
+              </ul>
+              </p>
             </div>
-          </nav>
-        
-    </header>
-
-    <main class="equiposMain">
-        <section>
-            <h1>Dames 1</h1>
-            <!-- carrusel de fotos de los jugadores con información-->
-        </section>
-
-    </main>
-
-    <footer class="pieDePagina">
-
-        <p> &#169 2022 Rocio Emme </p>
-
-        <div class="pieDiv">
-            <a href="https://www.instagram.com/khcdragons/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://www.facebook.com/khcdragons" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-
-            <a href="https://www.youtube.com/channel/UClPLj_oEcn_mmh2iZS0GeCg" target="_blank">
-                <i class="fab fa-youtube"></i>
-
-            </a>
+          </div>
         </div>
 
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Jimena_CEDRES.jpeg" class="card-img-top" alt="Jimena">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Jimena Cedres
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 23
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/De_Groof_Stephanie.jpeg" class="card-img-top" alt="Stephanie">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Stephanie De Groof
+                </li>
+                <li>
+                  Posición: Defensora
+                </li>
+                <li>
+                  Número de camiseta: 5
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/vic.jpeg" class="card-img-top" alt="Victoria">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Victoria De Kepper
+                </li>
+                <li>
+                  Posición: Defensora
+                </li>
+                <li>
+                  Número de camiseta: 22
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Rocio_EMME.jpeg" class="card-img-top" alt="Rocio">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Rocio Emme
+                </li>
+                <li>
+                  Posición: Defensora
+                </li>
+                <li>
+                  Número de camiseta: 3
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Jakus_Carolien.jpeg" class="card-img-top" alt="Caroline">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Carolien Jakus
+                </li>
+                <li>
+                  Posición: Defensora
+                </li>
+                <li>
+                  Número de camiseta: 24
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Magis_Valerie.jpeg" class="card-img-top" alt="Valerie">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Valerie Magis
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 11
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/alix_v.png" class="card-img-top" alt="Alix">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Alix Mariens
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 27
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Marien_Delphine.jpeg" class="card-img-top" alt="Delphine">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Delphine Marien
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 17
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Raye_v.jpeg" class="card-img-top" alt="Abigail">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Abigail Raye
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 15
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Anso.png" class="card-img-top" alt="Anso">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Anso Roel
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 9
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Mag_v.png" class="card-img-top" alt="Magali">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Magali Roumen
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 28
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Struyf_Margaux.jpeg" class="card-img-top" alt="Margaux">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Margaux Struyf
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 18
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/amber_v.png" class="card-img-top" alt="Amber">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Amber Verboven
+                </li>
+                <li>
+                  Posición: Arquera
+                </li>
+                <li>
+                  Número de camiseta: 21
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/fleur_v.png" class="card-img-top" alt="Fleur">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Fleur Verboven
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 12
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Manu_Vilar.jpeg" class="card-img-top" alt="Manuela">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Manuela Vilar
+                </li>
+                <li>
+                  Posición: Delantera
+                </li>
+                <li>
+                  Número de camiseta: 25
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/Bas_v.jpeg" class="card-img-top" alt="Bas">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Bas Van Zundert
+                </li>
+                <li>
+                  Posición: Entrenador
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/Tim_v.jpeg" class="card-img-top" alt="Tim">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Tim White
+                </li>
+                <li>
+                  Posición: Ayudante Técnico
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/hiske.jpeg" class="card-img-top" alt="Hiske">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Hiske Van Hovell
+                </li>
+                <li>
+                  Posición: Manager
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="pieDePagina">
+
+    <p> &#169 2022 Rocio Emme </p>
+
+    <div class="pieDiv">
+      <a href="https://www.instagram.com/khcdragons/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.facebook.com/khcdragons" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <a href="https://www.youtube.com/channel/UClPLj_oEcn_mmh2iZS0GeCg" target="_blank">
+        <i class="fab fa-youtube"></i>
+
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

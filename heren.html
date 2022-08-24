@@ -2,94 +2,543 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHC Dragons</title>
-   
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHC Dragons</title>
 
-<!-- ESTILO DE FUENTE -->
-    <script src="https://kit.fontawesome.com/57dc7168d9.js" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- ESTILO DE FUENTE -->
+  <script src="https://kit.fontawesome.com/57dc7168d9.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
+  <header class="sticky-top">
 
-        <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
+    <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./historia.html">HISTORIA</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="./equipos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">EQUIPOS
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./dames.html">DAMES 1</a></li>
-                      <li><a class="dropdown-item" href="./heren.html">HEREN 1</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./galeria.html">GALERIA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./sponsors.html">SPONSORS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="./equipos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">EQUIPOS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./dames.html">DAMES 1</a></li>
+                <li><a class="dropdown-item" href="./heren.html">HEREN 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sponsors.html">SPONSORS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="equiposMain">
+
+    <section class="container d-flex flex-column justify-content-center align-items-center">
+
+      <h1>Heren 1</h1>
+
+      <!-- card con bootstrap-->
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/LoicV.jpeg" class="card-img-top" alt="Loic">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Loic Van Doren
+                </li>
+                <li>
+                  Posición: Arquero
+                </li>
+                <li>
+                  Número de camiseta: 2
+                </li>
+              </ul>
+              </p>
             </div>
-          </nav>
-        
-    </header>
-
-    <main class="equiposMain">
-        <section>
-            <h1>Heren 1</h1>
-            <!-- carrusel de fotos de los jugadores con información-->
-            
-        </section>
-
-    </main>
-
-    <footer class="pieDePagina">
-
-        <p> &#169 2022 Rocio Emme </p>
-
-        <div class="pieDiv">
-            <a href="https://www.instagram.com/khcdragons/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://www.facebook.com/khcdragons" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-
-            <a href="https://www.youtube.com/channel/UClPLj_oEcn_mmh2iZS0GeCg" target="_blank">
-                <i class="fab fa-youtube"></i>
-
-            </a>
+          </div>
         </div>
 
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> 
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/federic.png" class="card-img-top" alt="Federic">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Federic Beeckman
+                </li>
+                <li>
+                  Posición: Arquero
+                </li>
+                <li>
+                  Número de camiseta: 21
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/cobb.jpeg" class="card-img-top" alt="Mathew">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Mathew Cobbaert
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 9
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Crols.jpeg" class="card-img-top" alt="Thomas">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Thomas Crols
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 7
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/dell.jpeg" class="card-img-top" alt="Nicolas">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Nicolas Della Torre
+                </li>
+                <li>
+                  Posición: Defensor
+                </li>
+                <li>
+                  Número de camiseta: 10
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/ralph.jpeg" class="card-img-top" alt="Ralph">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Ralph Puttes
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 24
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/fle.jpeg" class="card-img-top" alt="Felix">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Felix Denayer
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 19
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Foub.jpeg" class="card-img-top" alt="Victor">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Victor Foubert
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 8
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/geer.jpeg" class="card-img-top" alt="Sebastian">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Sebastiaan Geers
+                </li>
+                <li>
+                  Posición: Defensor
+                </li>
+                <li>
+                  Número de camiseta: 17
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/SimonG.jpeg" class="card-img-top" alt="Simon">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Simon Goudnard
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 13
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/conorH.jpeg" class="card-img-top" alt="Conor">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Conor Harte
+                </li>
+                <li>
+                  Posición: Defensor
+                </li>
+                <li>
+                  Número de camiseta: 27
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/mal.jpeg" class="card-img-top" alt="Max">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Max Lootens
+                </li>
+                <li>
+                  Posición: Defensor
+                </li>
+                <li>
+                  Número de camiseta: 5
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/maxluyt.jpeg" class="card-img-top" alt="MaxL">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Max Luyten
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 15
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/luyt.jpeg" class="card-img-top" alt="Timo">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Timothy Luyten
+                </li>
+                <li>
+                  Posición: Defensor
+                </li>
+                <li>
+                  Número de camiseta: 12
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/Luci.jpeg" class="card-img-top" alt="Lucas">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Lucas Martinez
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 22
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/putl.jpeg" class="card-img-top" alt="Lucas">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Lucas Putters
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 4
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/raes.jpeg" class="card-img-top" alt="Henri">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Henri Raes
+                </li>
+                <li>
+                  Posición: Delantero
+                </li>
+                <li>
+                  Número de camiseta: 23
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./img/rob.jpeg" class="card-img-top" alt="Robbert">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Robbert Rubens
+                </li>
+                <li>
+                  Posición: Mediocampista
+                </li>
+                <li>
+                  Número de camiseta: 7
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/craig-fulton-9-390x285.jpeg" class="card-img-top" alt="Ned">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Ned Fulton
+                </li>
+                <li>
+                  Posición: Entrenador
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/cosma.jpeg" class="card-img-top" alt="Michael">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Michael Cosma
+                </li>
+                <li>
+                  Posición: Ayudante Técnico
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./img/Steven.jpeg" class="card-img-top" alt="Steven">
+            <div class="card-body">
+              <p class="card-text">
+              <ul>
+                <li>
+                  Nombre: Steven Verret
+                </li>
+                <li>
+                  Posición: Manager
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer class="pieDePagina">
+
+    <p> &#169 2022 Rocio Emme </p>
+
+    <div class="pieDiv">
+      <a href="https://www.instagram.com/khcdragons/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.facebook.com/khcdragons" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <a href="https://www.youtube.com/channel/UClPLj_oEcn_mmh2iZS0GeCg" target="_blank">
+        <i class="fab fa-youtube"></i>
+
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
