@@ -196,6 +196,11 @@ h1 {
     align-items: center;
 }
 
+.carousel-item img{
+    height: 600px;
+    object-fit: cover;
+}
+
 /* sponsors */
 /* GRID */
 .sponsorsMain {
