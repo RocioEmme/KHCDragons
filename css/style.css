@@ -73,7 +73,8 @@ header {
 }
 
 /*titulosPrincipales*/
-h1 {
+
+.tituloPrincipal {
     color: white;
     padding: 10px;
     font-size: 30px;
@@ -101,7 +102,6 @@ h1 {
     align-items: center;
 }
 
-
 /* historia del club */
 .historiaMain {
     background-color: #002642;
@@ -124,7 +124,6 @@ h1 {
     padding-inline: 150px;
     height: 100vh;
     width: 100%;
-
 }
 
 .imagenHistoria h2 {
@@ -189,32 +188,60 @@ h1 {
     align-items: center;
 }
 
+
 .card-body li {
     color: #002642;
     font-weight: bold;
 }
 
-.card img{ 
-    opacity: 0.7;
+.card{
+    height: 300px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
+    overflow: hidden;
 }
 
-.card-img-top:hover{
+.card-img-top{
+    height: 300px;
+}
+.card-body{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    padding: 0%;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .card-body{
     opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.1);
 }
 
 /* Galeria de fotos */
-.galeriaMain {
+
+.galeria{
     background-color: #002642;
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .carousel-item img{
     height: 600px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* sponsors */
@@ -309,7 +336,7 @@ h1 {
 
 /* ANIMACIONES */
 
-h1 {animation:tracking-out-contract .7s cubic-bezier(.55,.085,.68,.53) 0.8s both}
+.tituloPrincipal{animation:tracking-out-contract .7s cubic-bezier(.55,.085,.68,.53) 0.8s both}
 
  @keyframes tracking-out-contract{0%{opacity:1}50%{opacity:1}100%{letter-spacing:-.5em;opacity:0}}
 

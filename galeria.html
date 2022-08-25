@@ -18,9 +18,10 @@
 </head>
 
 <body>
-  <header class="sticky-top">
 
+  <header class="sticky-top">
     <img src="./img/logo-dragons.jpeg" alt="Logo Dragons" class="logoDragons">
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -45,13 +46,13 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./galeria.html">GALERIA</a>
+              <a class="nav-link" href="./galeria.html">GALERIA</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./sponsors.html">SPONSORS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
             </li>
           </ul>
         </div>
@@ -60,81 +61,83 @@
 
   </header>
 
-  <main class="galeriaMain">
+  <main class="galeria">
 
-    <h1>Galeria de fotos</h1>
+    <h1 class="tituloPrincipal">Galeria de fotos</h1>
 
-    <!-- carrusel de fotos con BOOTSTRAP-->
+    <section class="container">
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/campeones.jpeg" class="d-block w-100 rounded" alt="Campeones">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/campeones.jpeg" class="d-block w-100" alt="Campeones Belgica">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/campeonas-euro.jpeg" class="d-block w-100" alt="Campeonas Euro">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/subcampeonas.jpeg" class="d-block w-100" alt="Subcampeonas Belgica">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pini.jpeg" class="d-block w-100" alt="Pini">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/vali.jpeg" class="d-block w-100" alt="Vali">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ro.jpeg" class="d-block w-100" alt="Ro Emme">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/jime.jpeg" class="d-block w-100" alt="Jime Cedres">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/marie.jpeg" class="d-block w-100" alt="Marie GK">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/abi.jpeg" class="d-block w-100" alt="Abi Raye">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/manu.jpeg" class="d-block w-100" alt="Manu Vilar">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gala bar.jpeg" class="d-block w-100" alt="Gala Bal">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gin.jpeg" class="d-block w-100" alt="Gin Dragons">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/flo.jpeg" class="d-block w-100" alt="FVB">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/simon.jpeg" class="d-block w-100" alt="Simon G">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/conor.jpeg" class="d-block w-100" alt="Conor Harte">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mathew.jpeg" class="d-block w-100" alt="MathewC">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/nico.jpeg" class="d-block w-100" alt="Nico Della Torre">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/luqui.jpeg" class="d-block w-100" alt="Luqui Martinez">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/festejo.jpeg" class="d-block w-100" alt="Gol">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="./img/campeonas-euro.jpeg" class="d-block w-100 rounded" alt="Campeonas Europa">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/subcampeonas.jpeg" class="d-block w-100 rounded" alt="Subcampeonas Belgica">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/pini.jpeg" class="d-block w-100 rounded" alt="Pini">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/vali.jpeg" class="d-block w-100 rounded" alt="Vali">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/ro.jpeg" class="d-block w-100 rounded" alt="Ro Emme">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/jime.jpeg" class="d-block w-100 rounded" alt="Jimena">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/marie.jpeg" class="d-block w-100 rounded" alt="Marie GK">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/abi.jpeg" class="d-block w-100 rounded" alt="Abi Ray">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/manu.jpeg" class="d-block w-100 rounded" alt="Manu">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/gala bar.jpeg" class="d-block w-100 rounded" alt="Gala Bal">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/gin.jpeg" class="d-block w-100 rounded" alt="Gin Dragons">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/flo.jpeg" class="d-block w-100 rounded" alt="FVB">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/simon.jpeg" class="d-block w-100 rounded" alt="SimonG">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/conor.jpeg" class="d-block w-100 rounded" alt="Conor">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/mathew.jpeg" class="d-block w-100 rounded" alt="MC">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/nico.jpeg" class="d-block w-100 rounded" alt="Cabezon">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/luqui.jpeg" class="d-block w-100 rounded" alt="Luqui">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/gol.jpeg" class="d-block w-100 rounded" alt="Festejo gol">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+
+    </section>
 
   </main>
 
@@ -158,6 +161,7 @@
     </div>
 
   </footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
