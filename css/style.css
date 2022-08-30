@@ -129,7 +129,7 @@ header {
 .imagenHistoria h2 {
     background-color: #840032;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
     margin-block: 20px;
     padding-inline:10px;
     color: white;
@@ -141,6 +141,7 @@ header {
     font-weight: bold;
     background-color: rgba(169, 169, 169, 0.841);
     line-height: 1.6;
+    font-size: 25px;
 }
 
 .seccionesHistoria {
@@ -336,25 +337,13 @@ header {
 
 /* ANIMACIONES */
 
-.tituloPrincipal{animation:tracking-out-contract .7s cubic-bezier(.55,.085,.68,.53) 0.8s both}
+.tituloPrincipal{-webkit-animation:blur-out-contract-bck 1s cubic-bezier(.55,.085,.68,.53) both;animation:blur-out-contract-bck 2.5s cubic-bezier(.55,.085,.68,.53) both}
 
- @keyframes tracking-out-contract{0%{opacity:1}50%{opacity:1}100%{letter-spacing:-.5em;opacity:0}}
+ @-webkit-keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
 
-.imagenHistoria {
-    animation: kenburns-bottom 5s ease-out both
-}
+ .imagenHistoria h2,p {-webkit-animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both;animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both}
 
-@keyframes kenburns-bottom {
-    0% {
-        transform: scale(1) translateY(0);
-        transform-origin: 50% 84%
-    }
-
-    100% {
-        transform: scale(1.25) translateY(15px);
-        transform-origin: bottom
-    }
-}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
 
 .imagenDiv1 {
     animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
@@ -498,6 +487,14 @@ header {
         height: 100vh;
     }
 
+    .imagenHistoria h2{
+        font-size: 25px;
+    }
+
+    .imagenHistoria p {
+        font-size: 20px;
+    }
+
     .ambasRemeras {
         flex-direction: column;
         justify-content: center;
@@ -555,12 +552,17 @@ header {
     .imagenHistoria {
         animation: none;
         padding-inline: 0;
+        height: 0%;
     }
 
     .imagenHistoria p {
         line-height: 1.6;
+        font-size: 15px;
     }
 
+    .imagenHistoria h2{
+        font-size: 20px;
+    }
     .seccionesHistoria {
         flex-direction: column;
     }
