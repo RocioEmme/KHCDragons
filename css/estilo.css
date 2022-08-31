@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/* variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+/* menu */
+.sticky-top {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: white; }
+  .sticky-top .logoDragons {
+    width: 150px; }
+
+.container-fluid {
+  display: flex;
+  align-items: center; }
+  .container-fluid .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-size: 24px; }
+    .container-fluid .navbar-nav .nav-item {
+      margin: 15px; }
+      .container-fluid .navbar-nav .nav-item .nav-link {
+        color: #002642;
+        text-decoration: none; }
+      .container-fluid .navbar-nav .nav-item .nav-link:hover {
+        text-decoration: underline; }
+      .container-fluid .navbar-nav .nav-item .nav-link.active {
+        text-decoration: underline; }
+
+/* footer */
+.pieDePagina {
+  background-color: #002642;
+  color: #E59500;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .pieDePagina .pieDiv a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px; }
+    .pieDePagina .pieDiv a i {
+      color: #E59500; }
+
+/*titulosPrincipales*/
+.tituloPrincipal {
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #840032;
+  border: double;
+  border-radius: 10px; }
+
+/* index */
+.portadaMain {
+  background-image: url(../img/mansion-linda.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/* ANIMACIONES */
+.tituloPrincipal {
+  -webkit-animation: blur-out-contract-bck 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: blur-out-contract-bck 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes blur-out-contract-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    letter-spacing: -.5em;
+    -webkit-transform: translateZ(-500px);
+    transform: translateZ(-500px);
+    -webkit-filter: blur(12px) opacity(0);
+    filter: blur(12px) opacity(0); } }
+
+@keyframes blur-out-contract-bck {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    letter-spacing: -.5em;
+    -webkit-transform: translateZ(-500px);
+    transform: translateZ(-500px);
+    -webkit-filter: blur(12px) opacity(0);
+    filter: blur(12px) opacity(0); } }
+
+.imagenHistoria h2, p {
+  -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
+  animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both; }
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
