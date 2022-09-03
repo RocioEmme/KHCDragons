@@ -18,6 +18,8 @@
 .container-fluid {
   display: flex;
   align-items: center; }
+  .container-fluid .navbar-toggler-icon {
+    color: white; }
   .container-fluid .navbar-nav {
     display: flex;
     list-style-type: none;
@@ -28,8 +30,8 @@
       .container-fluid .navbar-nav .nav-item .nav-link {
         color: #002642;
         text-decoration: none; }
-      .container-fluid .navbar-nav .nav-item .nav-link:hover {
-        text-decoration: underline; }
+        .container-fluid .navbar-nav .nav-item .nav-link:hover {
+          text-decoration: underline; }
       .container-fluid .navbar-nav .nav-item .nav-link.active {
         text-decoration: underline; }
 
