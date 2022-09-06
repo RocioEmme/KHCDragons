@@ -1,0 +1,45 @@
+/* menu */
+
+header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: white;
+
+    .logoDragons {
+        width: 150px;
+    }
+}
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+
+    .navbar-toggler-icon {
+        color: white;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        font-size: 24px;
+
+        .nav-item {
+            margin: 15px;
+
+            .nav-link {
+                color: #002642;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .nav-link.active {
+                text-decoration: underline;
+            }
+        }
+    }
+}

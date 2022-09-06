@@ -1,0 +1,253 @@
+/* index */
+
+.portadaMain {
+    background-image: url(../img/mansion-linda.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* historia del club */
+
+.historiaMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .imagenHistoria {
+        background-image: url(../img/sam.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 150px;
+        height: 100vh;
+        width: 100%;
+
+        h2 {
+            background-color: #840032;
+            font-weight: bold;
+            font-size: 35px;
+            margin-block: 20px;
+            padding-inline:10px;
+            color: white;
+        }
+
+        p {
+            color: #840032;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgba(169, 169, 169, 0.841);
+            line-height: 1.6;
+            font-size: 25px;
+        }
+    }
+}
+
+.seccionesHistoria {
+    background-color: #002642;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 10px;
+
+    .divHistoria {
+        h3{
+            color: white;
+            margin-block: 25px;
+            text-align: center;
+            border-style: double;
+            background-color: #840032;
+        }
+        
+        ul li {
+            list-style-type: none;
+            color: white;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 20px;
+        }
+
+    }
+}
+
+.ambasRemeras {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.remera {
+    width: 200px;
+}
+
+/* EQUIPOS */
+
+.equiposMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
+    overflow: hidden;
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+    &:hover .card-body{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover .card-img-top{
+        transform: scale(1.1);
+    }
+
+
+    .card-img-top{
+        height: 300px;
+    }
+
+    .card-body{
+        box-sizing: border-box;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        bottom: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s;
+        padding: 0%;
+    
+        li {
+            color: #002642;
+            font-weight: bold;
+        }
+    }
+}
+
+/* Galeria de fotos */
+
+.galeriaMain{
+    background-color: #002642;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.carousel-item img{
+    height: 600px;
+    object-fit: contain;
+}
+
+/* SPONSOR */
+
+/* GRID */
+.sponsorsMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsorsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sponsorsDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+
+        .imagenDiv1 {
+            background-color: white;
+            padding-left: 25px;
+            padding-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .imagenDiv2 {
+            background-color: white;
+            padding-left: 45px;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+        
+        .imagenDiv3 {
+            background-color: white;
+            padding-left: 60px;
+            border-radius: 10px;
+        }
+        
+        .imagenDiv4 {
+            background-color: white;
+            padding-left: 25px;
+            padding-top: 15px;
+            border-radius: 10px;
+        }
+        
+        .imagenDiv5 {
+            background-color: white;
+            padding-left: 25px;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+        
+        .imagenDiv6 {
+            background-color: white;
+            padding-top: 25px;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* contacto */
+.contactoMain {
+    background-color: #002642;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+
+    i {
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,116 @@
+
+/* ANIMACIONES */
+
+.tituloPrincipal{-webkit-animation:blur-out-contract-bck 1s cubic-bezier(.55,.085,.68,.53) both;animation:blur-out-contract-bck 2.5s cubic-bezier(.55,.085,.68,.53) both}
+
+ @-webkit-keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
+
+ .imagenHistoria h2,p {-webkit-animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both;animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both}
+
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+.contactoSection {
+    animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.imagenDiv1 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.1s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv2 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.2s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv3 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.3s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv4 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.4s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv5 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.5s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.imagenDiv6 {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation-delay: 0.6s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}   

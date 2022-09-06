@@ -1,0 +1,161 @@
+/* medias queries */
+/* TABLET */
+/* todas las secciones*/
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    header .logoDragons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container-fluid .navbar-nav {
+        align-items: flex-end;
+        font-size: 20px;
+
+        .nav-item {
+            margin: 0%;
+        }    
+    }
+
+    .portadaMain {
+        text-align: center;
+    }
+
+    .mansionFoto {
+        width: 100vh
+    }
+
+    .seccionesHistoria {
+        flex-direction: column;
+    }
+
+    .historiaMain .imagenHistoria {
+        height: 100vh;
+
+        h2{
+            font-size: 25px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .ambasRemeras {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            width: 100%;
+        }
+    }
+}
+
+/* MOBILE */
+/* todas las secciones */
+
+@media (min-width:320px)and (max-width:768px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        justify-content: flex-end;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 15px;
+        align-items: flex-end;
+
+        .nav-item {
+            margin: 0%;
+        }
+    }
+
+   header .logoDragons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .portadaMain {
+        text-align: center;
+    }
+
+    .mansionFoto {
+        width: 100vw;
+    }
+
+    .historiaMain .imagenHistoria {
+        animation: none;
+        padding-inline: 0;
+        height: 0%;
+
+        p {
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+
+    .seccionesHistoria {
+        flex-direction: column;
+    }
+
+    .ambasRemeras {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divHistoria iframe {
+        width: 100%;
+    }
+
+    .sponsorsDiv {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        width: 100vw;
+
+        .imagenDiv2 {
+            padding-left: 15px;
+        }
+    
+        .imagenDiv3 {
+            padding-left: 20px;
+        }
+    
+        .imagenDiv4 {
+            padding-left: 5px;
+        }
+    
+        .imagenDiv6 {
+            padding-left: 10px;
+        }
+    
+    }
+
+    .sponsor {
+        width: 90vw;
+    }
+
+    .icono {
+        padding-inline: 20px;
+    }
+}
+
+.direccion{
+    padding-left: 15px;
+}

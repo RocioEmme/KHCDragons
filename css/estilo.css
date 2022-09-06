@@ -5,14 +5,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif; }
+  *::selection {
+    background-color: #002642;
+    color: white; }
 
 /* menu */
-.sticky-top {
+header {
   display: flex;
   gap: 20px;
   justify-content: space-around;
   background-color: white; }
-  .sticky-top .logoDragons {
+  header .logoDragons {
     width: 150px; }
 
 .container-fluid {
@@ -34,21 +37,6 @@
           text-decoration: underline; }
       .container-fluid .navbar-nav .nav-item .nav-link.active {
         text-decoration: underline; }
-
-/* footer */
-.pieDePagina {
-  background-color: #002642;
-  color: #E59500;
-  padding-block: 30px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center; }
-  .pieDePagina .pieDiv a {
-    text-decoration: none;
-    font-size: 25px;
-    margin-right: 15px; }
-    .pieDePagina .pieDiv a i {
-      color: #E59500; }
 
 /*titulosPrincipales*/
 .tituloPrincipal {
@@ -72,6 +60,203 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+/* historia del club */
+.historiaMain {
+  background-color: #002642;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .historiaMain .imagenHistoria {
+    background-image: url(../img/sam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 150px;
+    height: 100vh;
+    width: 100%; }
+    .historiaMain .imagenHistoria h2 {
+      background-color: #840032;
+      font-weight: bold;
+      font-size: 35px;
+      margin-block: 20px;
+      padding-inline: 10px;
+      color: white; }
+    .historiaMain .imagenHistoria p {
+      color: #840032;
+      text-align: center;
+      font-weight: bold;
+      background-color: rgba(169, 169, 169, 0.841);
+      line-height: 1.6;
+      font-size: 25px; }
+
+.seccionesHistoria {
+  background-color: #002642;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 10px; }
+  .seccionesHistoria .divHistoria h3 {
+    color: white;
+    margin-block: 25px;
+    text-align: center;
+    border-style: double;
+    background-color: #840032; }
+  .seccionesHistoria .divHistoria ul li {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 20px; }
+
+.ambasRemeras {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 10px; }
+
+.remera {
+  width: 200px; }
+
+/* EQUIPOS */
+.equiposMain {
+  background-color: #002642;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  height: 300px;
+  box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
+  overflow: hidden; }
+  .card:hover {
+    cursor: pointer; }
+  .card:hover .card-body {
+    opacity: 1;
+    visibility: visible; }
+  .card:hover .card-img-top {
+    transform: scale(1.1); }
+  .card .card-img-top {
+    height: 300px; }
+  .card .card-body {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    padding: 0%; }
+    .card .card-body li {
+      color: #002642;
+      font-weight: bold; }
+
+/* Galeria de fotos */
+.galeriaMain {
+  background-color: #002642;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px; }
+
+.carousel-item img {
+  height: 600px;
+  object-fit: contain; }
+
+/* SPONSOR */
+/* GRID */
+.sponsorsMain {
+  background-color: #002642;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sponsorsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .sponsorsSection .sponsorsDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv1 {
+      background-color: white;
+      padding-left: 25px;
+      padding-top: 20px;
+      border-radius: 10px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv2 {
+      background-color: white;
+      padding-left: 45px;
+      padding-top: 10px;
+      border-radius: 10px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv3 {
+      background-color: white;
+      padding-left: 60px;
+      border-radius: 10px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv4 {
+      background-color: white;
+      padding-left: 25px;
+      padding-top: 15px;
+      border-radius: 10px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv5 {
+      background-color: white;
+      padding-left: 25px;
+      padding-top: 10px;
+      border-radius: 10px; }
+    .sponsorsSection .sponsorsDiv .imagenDiv6 {
+      background-color: white;
+      padding-top: 25px;
+      border-radius: 10px; }
+
+/* contacto */
+.contactoMain {
+  background-color: #002642;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.icono {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px; }
+  .icono i {
+    padding-bottom: 10px; }
+
+/* footer */
+.pieDePagina {
+  background-color: #002642;
+  color: #E59500;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .pieDePagina .pieDiv a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px; }
+    .pieDePagina .pieDiv a i {
+      color: #E59500; }
 
 /* ANIMACIONES */
 .tituloPrincipal {
@@ -123,3 +308,171 @@
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+
+.contactoSection {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.imagenDiv1 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.1s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv2 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.2s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv3 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.3s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv4 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.4s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv5 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.5s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv6 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 0.6s; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+/* medias queries */
+/* TABLET */
+/* todas las secciones*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .logoDragons {
+    width: 100px;
+    height: 100px; }
+  .container-fluid .navbar-nav {
+    align-items: flex-end;
+    font-size: 20px; }
+    .container-fluid .navbar-nav .nav-item {
+      margin: 0%; }
+  .portadaMain {
+    text-align: center; }
+  .mansionFoto {
+    width: 100vh; }
+  .seccionesHistoria {
+    flex-direction: column; }
+  .historiaMain .imagenHistoria {
+    height: 100vh; }
+    .historiaMain .imagenHistoria h2 {
+      font-size: 25px; }
+    .historiaMain .imagenHistoria p {
+      font-size: 20px; }
+  .ambasRemeras {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mapa h3 {
+      width: 100%; } }
+
+/* MOBILE */
+/* todas las secciones */
+@media (min-width: 320px) and (max-width: 768px) {
+  .navbar > .container,
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    justify-content: flex-end; }
+  .container-fluid .navbar-nav {
+    font-size: 15px;
+    align-items: flex-end; }
+    .container-fluid .navbar-nav .nav-item {
+      margin: 0%; }
+  header .logoDragons {
+    width: 100px;
+    height: 100px; }
+  .portadaMain {
+    text-align: center; }
+  .mansionFoto {
+    width: 100vw; }
+  .historiaMain .imagenHistoria {
+    animation: none;
+    padding-inline: 0;
+    height: 0%; }
+    .historiaMain .imagenHistoria p {
+      line-height: 1.6;
+      font-size: 15px; }
+    .historiaMain .imagenHistoria h2 {
+      font-size: 20px; }
+  .seccionesHistoria {
+    flex-direction: column; }
+  .ambasRemeras {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .divHistoria iframe {
+    width: 100%; }
+  .sponsorsDiv {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    width: 100vw; }
+    .sponsorsDiv .imagenDiv2 {
+      padding-left: 15px; }
+    .sponsorsDiv .imagenDiv3 {
+      padding-left: 20px; }
+    .sponsorsDiv .imagenDiv4 {
+      padding-left: 5px; }
+    .sponsorsDiv .imagenDiv6 {
+      padding-left: 10px; }
+  .sponsor {
+    width: 90vw; }
+  .icono {
+    padding-inline: 20px; } }
+
+.direccion {
+  padding-left: 15px; }
