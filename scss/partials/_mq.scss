@@ -48,10 +48,7 @@
     }
 
     .mapa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center();
 
         h3 {
             width: 100%;
@@ -123,7 +120,7 @@
         width: 100%;
     }
 
-    .sponsorsDiv {
+    .sponsorsSection .sponsorsDiv {
         display: flex;
         flex-direction: column;
         padding-left: 0;

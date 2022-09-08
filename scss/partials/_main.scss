@@ -15,29 +15,31 @@
 
 /* historia del club */
 
-.historiaMain {
-    background-color: #002642;
-    padding-top: 30px;
+@mixin flex-center-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.historiaMain {
+    background-color: $mainColor;
+    padding-top: 30px;
+    @include flex-center-center();
+}
 
     .imagenHistoria {
         background-image: url(../img/sam.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding-inline: 150px;
         height: 100vh;
         width: 100%;
+        @include flex-center-center();
 
         h2 {
-            background-color: #840032;
+            background-color: $secondColor;
             font-weight: bold;
             font-size: 35px;
             margin-block: 20px;
@@ -46,7 +48,7 @@
         }
 
         p {
-            color: #840032;
+            color: $secondColor;
             text-align: center;
             font-weight: bold;
             background-color: rgba(169, 169, 169, 0.841);
@@ -54,10 +56,9 @@
             font-size: 25px;
         }
     }
-}
 
 .seccionesHistoria {
-    background-color: #002642;
+    background-color: $mainColor;
     display: flex;
     gap: 30px;
     padding: 20px;
@@ -69,7 +70,7 @@
             margin-block: 25px;
             text-align: center;
             border-style: double;
-            background-color: #840032;
+            background-color: $secondColor;
         }
         
         ul li {
@@ -97,13 +98,9 @@
 /* EQUIPOS */
 
 .equiposMain {
-    background-color: #002642;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   @extend .historiaMain
 }
+
 .card{
     height: 300px;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
@@ -139,7 +136,7 @@
         padding: 0%;
     
         li {
-            color: #002642;
+            color: $mainColor;
             font-weight: bold;
         }
     }
@@ -148,12 +145,7 @@
 /* Galeria de fotos */
 
 .galeriaMain{
-    background-color: #002642;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+    @extend .historiaMain
 }
 
 .carousel-item img{
@@ -165,20 +157,12 @@
 
 /* GRID */
 .sponsorsMain {
-    background-color: #002642;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   @extend .historiaMain
 }
 
 .sponsorsSection {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center();
 
     .sponsorsDiv {
         display: grid;
@@ -230,22 +214,14 @@
 
 /* contacto */
 .contactoMain {
-    background-color: #002642;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .historiaMain
 }
 
 .icono {
     color: white;
     font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-block: 20px;
+    @include flex-center-center();
 
     i {
         padding-bottom: 10px;

@@ -1,13 +1,73 @@
-
 /* ANIMACIONES */
 
-.tituloPrincipal{-webkit-animation:blur-out-contract-bck 1s cubic-bezier(.55,.085,.68,.53) both;animation:blur-out-contract-bck 2.5s cubic-bezier(.55,.085,.68,.53) both}
+.tituloPrincipal {
+    -webkit-animation: blur-out-contract-bck 1s cubic-bezier(.55, .085, .68, .53) both;
+    animation: blur-out-contract-bck 2.5s cubic-bezier(.55, .085, .68, .53) both
+}
 
- @-webkit-keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes blur-out-contract-bck{0%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(.01);filter:blur(.01)}100%{letter-spacing:-.5em;-webkit-transform:translateZ(-500px);transform:translateZ(-500px);-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
+@-webkit-keyframes blur-out-contract-bck {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(.01);
+        filter: blur(.01)
+    }
 
- .imagenHistoria h2,p {-webkit-animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both;animation:scale-up-center 2s cubic-bezier(.39,.575,.565,1.000) .3s both}
+    100% {
+        letter-spacing: -.5em;
+        -webkit-transform: translateZ(-500px);
+        transform: translateZ(-500px);
+        -webkit-filter: blur(12px) opacity(0);
+        filter: blur(12px) opacity(0)
+    }
+}
 
-@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+@keyframes blur-out-contract-bck {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(.01);
+        filter: blur(.01)
+    }
+
+    100% {
+        letter-spacing: -.5em;
+        -webkit-transform: translateZ(-500px);
+        transform: translateZ(-500px);
+        -webkit-filter: blur(12px) opacity(0);
+        filter: blur(12px) opacity(0)
+    }
+}
+
+.imagenHistoria h2,
+p {
+    -webkit-animation: scale-up-center 2s cubic-bezier(.39, .575, .565, 1.000) .3s both;
+    animation: scale-up-center 2s cubic-bezier(.39, .575, .565, 1.000) .3s both
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
 
 .contactoSection {
     animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
@@ -27,7 +87,6 @@
 
 .imagenDiv1 {
     animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.1s;
 }
 
 @keyframes scale-up-center {
@@ -41,8 +100,7 @@
 }
 
 .imagenDiv2 {
-    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.2s;
+    @extend .imagenDiv1
 }
 
 @keyframes scale-up-center {
@@ -56,8 +114,7 @@
 }
 
 .imagenDiv3 {
-    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.3s;
+    @extend .imagenDiv1
 }
 
 @keyframes scale-up-center {
@@ -71,8 +128,7 @@
 }
 
 .imagenDiv4 {
-    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.4s;
+    @extend .imagenDiv1
 }
 
 @keyframes scale-up-center {
@@ -86,8 +142,7 @@
 }
 
 .imagenDiv5 {
-    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.5s;
+    @extend .imagenDiv1
 }
 
 @keyframes scale-up-center {
@@ -101,8 +156,7 @@
 }
 
 .imagenDiv6 {
-    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
-    animation-delay: 0.6s;
+   @extend .imagenDiv1
 }
 
 @keyframes scale-up-center {
@@ -113,4 +167,10 @@
     100% {
         transform: scale(1)
     }
-}   
+}
+
+@for $imagenSponsor from 1 through 6 {
+    .imagenDiv#{$imagenSponsor} {
+        animation-delay: $imagenSponsor*0.1s;
+    }
+}

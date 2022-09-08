@@ -62,39 +62,40 @@ header {
   align-items: center; }
 
 /* historia del club */
-.historiaMain {
+.historiaMain, .equiposMain, .galeriaMain, .sponsorsMain, .contactoMain {
   background-color: #002642;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .historiaMain .imagenHistoria {
-    background-image: url(../img/sam.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 150px;
-    height: 100vh;
-    width: 100%; }
-    .historiaMain .imagenHistoria h2 {
-      background-color: #840032;
-      font-weight: bold;
-      font-size: 35px;
-      margin-block: 20px;
-      padding-inline: 10px;
-      color: white; }
-    .historiaMain .imagenHistoria p {
-      color: #840032;
-      text-align: center;
-      font-weight: bold;
-      background-color: rgba(169, 169, 169, 0.841);
-      line-height: 1.6;
-      font-size: 25px; }
+
+.imagenHistoria {
+  background-image: url(../img/sam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-inline: 150px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .imagenHistoria h2 {
+    background-color: #840032;
+    font-weight: bold;
+    font-size: 35px;
+    margin-block: 20px;
+    padding-inline: 10px;
+    color: white; }
+  .imagenHistoria p {
+    color: #840032;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(169, 169, 169, 0.841);
+    line-height: 1.6;
+    font-size: 25px; }
 
 .seccionesHistoria {
   background-color: #002642;
@@ -125,14 +126,6 @@ header {
   width: 200px; }
 
 /* EQUIPOS */
-.equiposMain {
-  background-color: #002642;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .card {
   height: 300px;
   box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
@@ -161,28 +154,12 @@ header {
       font-weight: bold; }
 
 /* Galeria de fotos */
-.galeriaMain {
-  background-color: #002642;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px; }
-
 .carousel-item img {
   height: 600px;
   object-fit: contain; }
 
 /* SPONSOR */
 /* GRID */
-.sponsorsMain {
-  background-color: #002642;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .sponsorsSection {
   width: 100%;
   display: flex;
@@ -194,7 +171,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px; }
-    .sponsorsSection .sponsorsDiv .imagenDiv1 {
+    .sponsorsSection .sponsorsDiv .imagenDiv1, .sponsorsSection .sponsorsDiv .imagenDiv2, .sponsorsSection .sponsorsDiv .imagenDiv3, .sponsorsSection .sponsorsDiv .imagenDiv4, .sponsorsSection .sponsorsDiv .imagenDiv5, .sponsorsSection .sponsorsDiv .imagenDiv6 {
       background-color: white;
       padding-left: 25px;
       padding-top: 20px;
@@ -224,22 +201,14 @@ header {
       border-radius: 10px; }
 
 /* contacto */
-.contactoMain {
-  background-color: #002642;
-  padding-top: 30px;
+.icono {
+  color: white;
+  font-size: 25px;
+  padding-block: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.icono {
-  color: white;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-block: 20px; }
   .icono i {
     padding-bottom: 10px; }
 
@@ -289,7 +258,8 @@ header {
     -webkit-filter: blur(12px) opacity(0);
     filter: blur(12px) opacity(0); } }
 
-.imagenHistoria h2, p {
+.imagenHistoria h2,
+p {
   -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both;
   animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s both; }
 
@@ -320,65 +290,62 @@ header {
     transform: translateX(0);
     opacity: 1; } }
 
-.imagenDiv1 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+.imagenDiv1, .imagenDiv2, .imagenDiv3, .imagenDiv4, .imagenDiv5, .imagenDiv6 {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.imagenDiv1, .imagenDiv2, .imagenDiv3, .imagenDiv4, .imagenDiv5, .imagenDiv6 {
   animation-delay: 0.1s; }
 
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
-
 .imagenDiv2 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.2s; }
 
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
-
 .imagenDiv3 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.3s; }
 
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
-
 .imagenDiv4 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.4s; }
 
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
-
 .imagenDiv5 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.5s; }
 
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
-
 .imagenDiv6 {
-  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation-delay: 0.6s; }
-
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5); }
-  100% {
-    transform: scale(1); } }
 
 /* medias queries */
 /* TABLET */
@@ -398,11 +365,11 @@ header {
     width: 100vh; }
   .seccionesHistoria {
     flex-direction: column; }
-  .historiaMain .imagenHistoria {
+  .historiaMain .imagenHistoria, .equiposMain .imagenHistoria, .galeriaMain .imagenHistoria, .sponsorsMain .imagenHistoria, .contactoMain .imagenHistoria {
     height: 100vh; }
-    .historiaMain .imagenHistoria h2 {
+    .historiaMain .imagenHistoria h2, .equiposMain .imagenHistoria h2, .galeriaMain .imagenHistoria h2, .sponsorsMain .imagenHistoria h2, .contactoMain .imagenHistoria h2 {
       font-size: 25px; }
-    .historiaMain .imagenHistoria p {
+    .historiaMain .imagenHistoria p, .equiposMain .imagenHistoria p, .galeriaMain .imagenHistoria p, .sponsorsMain .imagenHistoria p, .contactoMain .imagenHistoria p {
       font-size: 20px; }
   .ambasRemeras {
     flex-direction: column;
@@ -439,14 +406,14 @@ header {
     text-align: center; }
   .mansionFoto {
     width: 100vw; }
-  .historiaMain .imagenHistoria {
+  .historiaMain .imagenHistoria, .equiposMain .imagenHistoria, .galeriaMain .imagenHistoria, .sponsorsMain .imagenHistoria, .contactoMain .imagenHistoria {
     animation: none;
     padding-inline: 0;
     height: 0%; }
-    .historiaMain .imagenHistoria p {
+    .historiaMain .imagenHistoria p, .equiposMain .imagenHistoria p, .galeriaMain .imagenHistoria p, .sponsorsMain .imagenHistoria p, .contactoMain .imagenHistoria p {
       line-height: 1.6;
       font-size: 15px; }
-    .historiaMain .imagenHistoria h2 {
+    .historiaMain .imagenHistoria h2, .equiposMain .imagenHistoria h2, .galeriaMain .imagenHistoria h2, .sponsorsMain .imagenHistoria h2, .contactoMain .imagenHistoria h2 {
       font-size: 20px; }
   .seccionesHistoria {
     flex-direction: column; }
@@ -456,18 +423,18 @@ header {
     align-items: center; }
   .divHistoria iframe {
     width: 100%; }
-  .sponsorsDiv {
+  .sponsorsSection .sponsorsDiv {
     display: flex;
     flex-direction: column;
     padding-left: 0;
     width: 100vw; }
-    .sponsorsDiv .imagenDiv2 {
+    .sponsorsSection .sponsorsDiv .imagenDiv2 {
       padding-left: 15px; }
-    .sponsorsDiv .imagenDiv3 {
+    .sponsorsSection .sponsorsDiv .imagenDiv3 {
       padding-left: 20px; }
-    .sponsorsDiv .imagenDiv4 {
+    .sponsorsSection .sponsorsDiv .imagenDiv4 {
       padding-left: 5px; }
-    .sponsorsDiv .imagenDiv6 {
+    .sponsorsSection .sponsorsDiv .imagenDiv6 {
       padding-left: 10px; }
   .sponsor {
     width: 90vw; }
