@@ -5,16 +5,46 @@
     color: $footerColor;
     padding-block: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
 
-    .pieDiv a {
-        text-decoration: none;
-        font-size: 25px;
-        margin-right: 15px;
+    .pieDiv {
+        a {
+            text-decoration: none;
+            font-size: 40px;
+            margin-right: 15px;
+    
+            i {
+                color: $footerColor;
 
-        i {
+            &.fa-instagram:hover{
+                color:fuchsia
+            }
+
+            &.fa-facebook-square:hover{
+                color:blue
+            }
+
+            &.fa-youtube:hover{
+                color:red
+            }
+
+            } 
+        }
+
+
+
+        hr {
+            height: 10px;
             color: $footerColor;
+            opacity: 1;
+        }
+
+        .canchas{
+            height: 500px;
+            width: 700px;
+            padding: 20px;
         }
     }
+    
 }
