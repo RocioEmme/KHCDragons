@@ -22,41 +22,42 @@
     align-items: center;
 
 }
+
 .historiaMain {
     background-color: $mainColor;
     padding-top: 30px;
     @include flex-center-center();
 }
 
-    .imagenHistoria {
-        background-image: url(../img/sam.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        padding-inline: 150px;
-        height: 100vh;
-        width: 100%;
-        @include flex-center-center();
+.imagenHistoria {
+    background-image: url(../img/sam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-inline: 150px;
+    height: 100vh;
+    width: 100%;
+    @include flex-center-center();
 
-        h2 {
-            background-color: $secondColor;
-            font-weight: bold;
-            font-size: 35px;
-            margin-block: 20px;
-            padding:10px;
-            color: white;
-        }
-
-        p {
-            color: $secondColor;
-            text-align: center;
-            font-weight: bold;
-            background-color: rgba(169, 169, 169, 0.841);
-            line-height: 1.6;
-            font-size: 25px;
-            padding: 15px;
-        }
+    h2 {
+        background-color: $secondColor;
+        font-weight: bold;
+        font-size: 35px;
+        margin-block: 20px;
+        padding: 10px;
+        color: white;
     }
+
+    p {
+        color: $secondColor;
+        text-align: center;
+        font-weight: bold;
+        background-color: rgba(169, 169, 169, 0.841);
+        line-height: 1.6;
+        font-size: 25px;
+        padding: 15px;
+    }
+}
 
 .seccionesHistoria {
     background-color: $mainColor;
@@ -66,14 +67,14 @@
     margin-top: 10px;
 
     .divHistoria {
-        h3{
+        h3 {
             color: white;
             margin-block: 25px;
             text-align: center;
             border-style: double;
             background-color: $secondColor;
         }
-        
+
         ul li {
             list-style-type: none;
             color: white;
@@ -99,33 +100,33 @@
 /* EQUIPOS */
 
 .equiposMain {
-   @extend .historiaMain
+    @extend .historiaMain
 }
 
-.card{
+.card {
     height: 300px;
     box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.336);
     overflow: hidden;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
-    
-    &:hover .card-body{
+
+    &:hover .card-body {
         opacity: 1;
         visibility: visible;
     }
 
-    &:hover .card-img-top{
+    &:hover .card-img-top {
         transform: scale(1.1);
     }
 
 
-    .card-img-top{
+    .card-img-top {
         height: 300px;
     }
 
-    .card-body{
+    .card-body {
         box-sizing: border-box;
         position: absolute;
         background-color: white;
@@ -135,7 +136,7 @@
         opacity: 0;
         transition: .5s;
         padding: 0%;
-    
+
         li {
             color: $mainColor;
             font-weight: bold;
@@ -145,11 +146,11 @@
 
 /* Galeria de fotos */
 
-.galeriaMain{
+.galeriaMain {
     @extend .historiaMain
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 600px;
     object-fit: contain;
 }
@@ -158,7 +159,7 @@
 
 /* GRID */
 .sponsorsMain {
-   @extend .historiaMain
+    @extend .historiaMain
 }
 
 .sponsorsSection {
@@ -177,34 +178,34 @@
             padding-top: 20px;
             border-radius: 10px;
         }
-        
+
         .imagenDiv2 {
             background-color: white;
             padding-left: 45px;
             padding-top: 10px;
             border-radius: 10px;
         }
-        
+
         .imagenDiv3 {
             background-color: white;
             padding-left: 60px;
             border-radius: 10px;
         }
-        
+
         .imagenDiv4 {
             background-color: white;
             padding-left: 25px;
             padding-top: 15px;
             border-radius: 10px;
         }
-        
+
         .imagenDiv5 {
             background-color: white;
             padding-left: 25px;
             padding-top: 10px;
             border-radius: 10px;
         }
-        
+
         .imagenDiv6 {
             background-color: white;
             padding-top: 25px;
@@ -214,6 +215,7 @@
 }
 
 /* contacto */
+
 .contactoMain {
     @extend .historiaMain
 }
@@ -226,5 +228,45 @@
 
     i {
         padding-bottom: 10px;
+    }
+}
+
+.contactoSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+
+    .formularioContacto {
+        color: white;
+        font-size: 25px;
+        width: 400px;
+        height: 400px;
+
+        .mb-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            color: white;
+            background-color: $mainColor;
+            border-color: white;
+            border-style: double;
+            border-radius: 15px;
+            font-size: 20px;
+            padding: 8px;
+            margin-left: 300px;
+        }
+
+        button:hover{
+            background-color: white;
+            color: $mainColor;
+            border-style: double;
+            border-color: $mainColor;
+        }
     }
 }

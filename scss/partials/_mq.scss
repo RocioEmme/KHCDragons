@@ -15,7 +15,7 @@
 
         .nav-item {
             margin: 0%;
-        }    
+        }
     }
 
     .portadaMain {
@@ -33,9 +33,10 @@
     .historiaMain .imagenHistoria {
         height: 100vh;
 
-        h2{
+        h2 {
             font-size: 25px;
         }
+
         p {
             font-size: 20px;
         }
@@ -54,6 +55,16 @@
             width: 100%;
         }
     }
+
+    .contactoSection {
+        flex-direction: column;
+        gap: 50px;
+
+        .formularioContacto button{
+            margin-left: 180px;
+        }
+    }
+    
 }
 
 /* MOBILE */
@@ -70,6 +81,7 @@
     .navbar>.container-xxl {
         justify-content: flex-end;
     }
+
     .container-fluid .navbar-nav {
         font-size: 15px;
         align-items: flex-end;
@@ -79,7 +91,7 @@
         }
     }
 
-   header .logoDragons {
+    header .logoDragons {
         width: 100px;
         height: 100px;
     }
@@ -101,7 +113,8 @@
             line-height: 1.6;
             font-size: 15px;
         }
-        h2{
+
+        h2 {
             font-size: 20px;
         }
     }
@@ -129,19 +142,19 @@
         .imagenDiv2 {
             padding-left: 15px;
         }
-    
+
         .imagenDiv3 {
             padding-left: 20px;
         }
-    
+
         .imagenDiv4 {
             padding-left: 5px;
         }
-    
+
         .imagenDiv6 {
             padding-left: 10px;
         }
-    
+
     }
 
     .sponsor {
@@ -151,13 +164,37 @@
     .icono {
         padding-inline: 20px;
     }
-}
 
-.direccion{
-    padding-left: 15px;
-}
+    .direccion {
+        padding-left: 15px;
+    }
 
-.pieDePagina .pieDiv .canchas {
-    height: 90vw;
-    width: 90vw;
+    .pieDePagina .pieDiv .canchas {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .direccion {
+        padding-left: 15px;
+    }
+
+    .pieDePagina .pieDiv .canchas {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .contactoSection {
+        flex-direction: column;
+        gap: 30px;
+
+        .formularioContacto {
+            width: 80%;
+            height: 90%;
+
+            button{
+                margin-left: 90px;
+            }
+        }
+    }
+
 }

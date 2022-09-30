@@ -213,6 +213,36 @@ header {
   .icono i {
     padding-bottom: 10px; }
 
+.contactoSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 150px; }
+  .contactoSection .formularioContacto {
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    height: 400px; }
+    .contactoSection .formularioContacto .mb-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contactoSection .formularioContacto button {
+      color: white;
+      background-color: #002642;
+      border-color: white;
+      border-style: double;
+      border-radius: 15px;
+      font-size: 20px;
+      padding: 8px;
+      margin-left: 300px; }
+    .contactoSection .formularioContacto button:hover {
+      background-color: white;
+      color: #002642;
+      border-style: double;
+      border-color: #002642; }
+
 /* footer */
 .pieDePagina {
   background-color: #002642;
@@ -240,7 +270,8 @@ header {
   .pieDePagina .pieDiv .canchas {
     height: 500px;
     width: 700px;
-    padding: 20px; }
+    padding: 20px;
+    border-radius: 30px; }
 
 /* ANIMACIONES */
 .tituloPrincipal {
@@ -396,7 +427,12 @@ p {
     justify-content: center;
     align-items: center; }
     .mapa h3 {
-      width: 100%; } }
+      width: 100%; }
+  .contactoSection {
+    flex-direction: column;
+    gap: 50px; }
+    .contactoSection .formularioContacto button {
+      margin-left: 180px; } }
 
 /* MOBILE */
 /* todas las secciones */
@@ -454,11 +490,22 @@ p {
   .sponsor {
     width: 90vw; }
   .icono {
-    padding-inline: 20px; } }
-
-.direccion {
-  padding-left: 15px; }
-
-.pieDePagina .pieDiv .canchas {
-  height: 90vw;
-  width: 90vw; }
+    padding-inline: 20px; }
+  .direccion {
+    padding-left: 15px; }
+  .pieDePagina .pieDiv .canchas {
+    height: 90vw;
+    width: 90vw; }
+  .direccion {
+    padding-left: 15px; }
+  .pieDePagina .pieDiv .canchas {
+    height: 90vw;
+    width: 90vw; }
+  .contactoSection {
+    flex-direction: column;
+    gap: 30px; }
+    .contactoSection .formularioContacto {
+      width: 80%;
+      height: 90%; }
+      .contactoSection .formularioContacto button {
+        margin-left: 90px; } }
